@@ -1,0 +1,384 @@
+[p GLOBOPT AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"134 C:\Users\Nader\Desktop\heater_system\code\heater.X\main.c
+[e E1008 . `uc
+UP_SWITCH_PRESSED 0
+NOTHING_PRESSED 1
+DOWN_SWITCH_PRESSED 2
+]
+"52 C:\Users\Nader\Desktop\heater_system\code\heater.X\io_prepherals.c
+[e E997 . `uc
+UP_SWITCH_PRESSED 0
+NOTHING_PRESSED 1
+DOWN_SWITCH_PRESSED 2
+]
+"32 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"44 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"27 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"12 C:\Users\Nader\Desktop\heater_system\code\heater.X\io_prepherals.c
+[v _init_switches init_switches `(v  1 e 1 0 ]
+"18
+[v _init_cooler_heater init_cooler_heater `(v  1 e 1 0 ]
+"30
+[v _cooler_on cooler_on `(v  1 e 1 0 ]
+[v i1_cooler_on cooler_on `(v  1 e 1 0 ]
+"34
+[v _heater_on heater_on `(v  1 e 1 0 ]
+[v i1_heater_on heater_on `(v  1 e 1 0 ]
+"40
+[v _cooler_off cooler_off `(v  1 e 1 0 ]
+[v i1_cooler_off cooler_off `(v  1 e 1 0 ]
+"44
+[v _heater_off heater_off `(v  1 e 1 0 ]
+[v i1_heater_off heater_off `(v  1 e 1 0 ]
+"51
+[v _sw_check sw_check `(E1008  1 e 1 0 ]
+"11 C:\Users\Nader\Desktop\heater_system\code\heater.X\lm35.c
+[v _init_lm35 init_lm35 `(v  1 e 1 0 ]
+"25
+[v _start_lm35 start_lm35 `(v  1 e 1 0 ]
+"37
+[v _reset_lm35 reset_lm35 `(v  1 e 1 0 ]
+"42
+[v _read_lm35 read_lm35 `(us  1 e 2 0 ]
+"25 C:\Users\Nader\Desktop\heater_system\code\heater.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"109
+[v _ISR ISR `II(v  1 e 1 0 ]
+"182
+[v _prepheral_testing prepheral_testing `(v  1 e 1 0 ]
+"13 C:\Users\Nader\Desktop\heater_system\code\heater.X\seven_segment.c
+[v _init_7seg init_7seg `(v  1 e 1 0 ]
+"30
+[v _DEL_write_7seg DEL_write_7seg `(v  1 e 1 0 ]
+"37
+[v _write_7seg write_7seg `(v  1 e 1 0 ]
+"59
+[v _selec_7seg selec_7seg `(v  1 e 1 0 ]
+"73
+[v _evaluate evaluate `(v  1 e 1 0 ]
+"217 C:/Program Files/Microchip/xc8/v2.36/pic/include/proc\pic16f877a.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S80 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"296
+[u S89 . 1 `S80 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES89  1 e 1 @7 ]
+[s S139 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"358
+[u S148 . 1 `S139 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES148  1 e 1 @8 ]
+[s S101 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"550
+[u S110 . 1 `S101 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES110  1 e 1 @12 ]
+"1153
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1160
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+"1376
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S300 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1455
+[u S309 . 1 `S300 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES309  1 e 1 @135 ]
+[s S206 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1517
+[u S215 . 1 `S206 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES215  1 e 1 @136 ]
+"2223
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2230
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2403
+[v _ADIE ADIE `VEb  1 e 0 @1126 ]
+"2406
+[v _ADIF ADIF `VEb  1 e 0 @102 ]
+"2574
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2580
+[v _GO_DONE GO_DONE `VEb  1 e 0 @250 ]
+"2604
+[v _INTE INTE `VEb  1 e 0 @92 ]
+"2607
+[v _INTEDG INTEDG `VEb  1 e 0 @1038 ]
+"2610
+[v _INTF INTF `VEb  1 e 0 @89 ]
+"2634
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"16 C:\Users\Nader\Desktop\heater_system\code\heater.X\main.c
+[v _desired_temprature desired_temprature `uc  1 e 1 0 ]
+"17
+[v _current_temprature current_temprature `uc  1 e 1 0 ]
+"19
+[v _display_desirered_value display_desirered_value `uc  1 e 1 0 ]
+"25
+[v _main main `(v  1 e 1 0 ]
+{
+"51
+[v main@i i `i  1 a 2 28 ]
+"102
+} 0
+"25 C:\Users\Nader\Desktop\heater_system\code\heater.X\lm35.c
+[v _start_lm35 start_lm35 `(v  1 e 1 0 ]
+{
+[v start_lm35@channle channle `uc  1 a 1 wreg ]
+[v start_lm35@channle channle `uc  1 a 1 wreg ]
+"28
+[v start_lm35@channle channle `uc  1 a 1 37 ]
+"35
+} 0
+"182 C:\Users\Nader\Desktop\heater_system\code\heater.X\main.c
+[v _prepheral_testing prepheral_testing `(v  1 e 1 0 ]
+{
+"195
+[v prepheral_testing@i_204 i `i  1 a 2 5 ]
+"186
+[v prepheral_testing@i i `i  1 a 2 3 ]
+"214
+} 0
+"34 C:\Users\Nader\Desktop\heater_system\code\heater.X\io_prepherals.c
+[v _heater_on heater_on `(v  1 e 1 0 ]
+{
+"38
+} 0
+"12
+[v _init_switches init_switches `(v  1 e 1 0 ]
+{
+"17
+} 0
+"11 C:\Users\Nader\Desktop\heater_system\code\heater.X\lm35.c
+[v _init_lm35 init_lm35 `(v  1 e 1 0 ]
+{
+"23
+} 0
+"18 C:\Users\Nader\Desktop\heater_system\code\heater.X\io_prepherals.c
+[v _init_cooler_heater init_cooler_heater `(v  1 e 1 0 ]
+{
+"28
+} 0
+"44
+[v _heater_off heater_off `(v  1 e 1 0 ]
+{
+"48
+} 0
+"40
+[v _cooler_off cooler_off `(v  1 e 1 0 ]
+{
+"43
+} 0
+"13 C:\Users\Nader\Desktop\heater_system\code\heater.X\seven_segment.c
+[v _init_7seg init_7seg `(v  1 e 1 0 ]
+{
+"28
+} 0
+"30 C:\Users\Nader\Desktop\heater_system\code\heater.X\io_prepherals.c
+[v _cooler_on cooler_on `(v  1 e 1 0 ]
+{
+"33
+} 0
+"30 C:\Users\Nader\Desktop\heater_system\code\heater.X\seven_segment.c
+[v _DEL_write_7seg DEL_write_7seg `(v  1 e 1 0 ]
+{
+"32
+[v DEL_write_7seg@i i `i  1 a 2 23 ]
+"30
+[v DEL_write_7seg@val val `ui  1 p 2 19 ]
+[v DEL_write_7seg@time time `ui  1 p 2 21 ]
+"36
+} 0
+"37
+[v _write_7seg write_7seg `(v  1 e 1 0 ]
+{
+"40
+[v write_7seg@d2 d2 `uc  1 a 1 18 ]
+"39
+[v write_7seg@d1 d1 `uc  1 a 1 17 ]
+"37
+[v write_7seg@x x `ui  1 p 2 13 ]
+"57
+} 0
+"59
+[v _selec_7seg selec_7seg `(v  1 e 1 0 ]
+{
+[v selec_7seg@sel sel `uc  1 a 1 wreg ]
+[v selec_7seg@sel sel `uc  1 a 1 wreg ]
+[v selec_7seg@sel sel `uc  1 a 1 37 ]
+"71
+} 0
+"73
+[v _evaluate evaluate `(v  1 e 1 0 ]
+{
+[v evaluate@x x `uc  1 a 1 wreg ]
+[v evaluate@x x `uc  1 a 1 wreg ]
+[v evaluate@x x `uc  1 a 1 37 ]
+"98
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 10 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 12 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 5 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 7 ]
+"30
+} 0
+"109 C:\Users\Nader\Desktop\heater_system\code\heater.X\main.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"121
+[v ISR@tmp tmp `i  1 a 2 35 ]
+"180
+} 0
+"34 C:\Users\Nader\Desktop\heater_system\code\heater.X\io_prepherals.c
+[v i1_heater_on heater_on `(v  1 e 1 0 ]
+{
+"38
+} 0
+"44
+[v i1_heater_off heater_off `(v  1 e 1 0 ]
+{
+"48
+} 0
+"30
+[v i1_cooler_on cooler_on `(v  1 e 1 0 ]
+{
+"33
+} 0
+"40
+[v i1_cooler_off cooler_off `(v  1 e 1 0 ]
+{
+"43
+} 0
+"51
+[v _sw_check sw_check `(E1008  1 e 1 0 ]
+{
+"70
+} 0
+"37 C:\Users\Nader\Desktop\heater_system\code\heater.X\lm35.c
+[v _reset_lm35 reset_lm35 `(v  1 e 1 0 ]
+{
+"40
+} 0
+"42
+[v _read_lm35 read_lm35 `(us  1 e 2 0 ]
+{
+"46
+} 0
+"44 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 25 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 29 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 24 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 16 ]
+"73
+} 0
+"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 11 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 15 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 14 ]
+[v ___ftmul@exp exp `uc  1 a 1 10 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 0 ]
+[v ___ftmul@f2 f2 `f  1 p 3 3 ]
+"157
+} 0
+"32 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 13 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
